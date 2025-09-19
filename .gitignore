@@ -1,0 +1,6 @@
+.env
+.idea
+config.yml
+secrets.ini
+*.key
+*.pem
