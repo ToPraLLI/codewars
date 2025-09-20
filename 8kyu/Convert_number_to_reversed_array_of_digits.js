@@ -9,11 +9,11 @@ Example (Input => Output):
 */
 function digitize(n) {
     let result = [];
-    let str = n.toString()
+    let str = n.toString();
     for(let i = str.length - 1; i >= 0; i--){
-        result.push(Number(str[i]))         
+        result.push(Number(str[i]));
     }
-    return result
+    return result;
 }
 /*
 Sample Tests:

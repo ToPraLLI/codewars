@@ -12,10 +12,10 @@ function noSpace(x){
     let newSpace = '';
     for(let i = 0;  i < x.length; i++){
         if(x[i] !== ' '){
-            newSpace += x[i]
+            newSpace += x[i];
         }
     }
-    return newSpace
+    return newSpace;
 }
 /*
 Sample Tests:

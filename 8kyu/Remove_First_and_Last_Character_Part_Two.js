@@ -17,8 +17,28 @@ Examples
 "1"    =>  NULL
 "1,2"  =>  NULL
 */
+/* 1 version
 function array(string) {
-  
+    let array = string.split(',');
+    if (array.length <= 2) {
+        return null;
+    }
+    array = array.slice(1, -1);
+    array = array.join(' ');
+    return array
+}
+*/
+/* 2 version
+function array(string) {
+    let array = string.split(',').slice(1, -1).join(' ');
+    if (array.length < 1) {
+        return null;
+    }
+    return array
+}
+*/
+function array(string) {
+    return string.split(',').slice(1, -1).join(' ') || null;
 }
 /*
 Sample Tests:
