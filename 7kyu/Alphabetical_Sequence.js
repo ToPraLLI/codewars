@@ -13,7 +13,11 @@ Description:
         Return value needs to be a string.
         */
 function alphaSeq (str) {
-    
+    return str.toLowerCase().split('').sort().map(str => {
+        const position = str.charCodeAt(0) - 96;
+        return str.toUpperCase() + str.repeat(position - 1);
+    }).join(',');
+
 }
 /*
 Sample Tests:
