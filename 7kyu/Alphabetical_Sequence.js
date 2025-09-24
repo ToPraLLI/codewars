@@ -17,7 +17,6 @@ function alphaSeq (str) {
         const position = str.charCodeAt(0) - 96;
         return str.toUpperCase() + str.repeat(position - 1);
     }).join(',');
-
 }
 /*
 Sample Tests:
