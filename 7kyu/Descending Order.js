@@ -10,10 +10,8 @@ Description:
             Input: 123456789 Output: 987654321
 */
 function descendingOrder(n){
-    return n.filter(Number);
+    return parseInt(n.toString().split('').sort((a, b) => b - a).join(''));
 }
-
-console.log(42145)
 /*
 Sample Tests:
     const { assert } = require("chai")
