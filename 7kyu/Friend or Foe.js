@@ -12,8 +12,8 @@ Description:
             Input strings will only contain letters.
                 Note: keep the original order of the names in the output.
 */
-function friend(friends){
-    //your code here
+function friend(names) {
+    return names.filter(name => name.length === 4);
 }
 /*
 Sample Tests:
